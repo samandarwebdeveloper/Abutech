@@ -1,0 +1,75 @@
+// ===========news====================
+.news {
+
+}
+.news__wrapper {
+    padding: 50px 0;
+}
+.news__text {
+    font-size: 24px;
+    line-height: 29px;
+    color: #00094A;
+}   
+.news__lead {
+    font-size: 50px;
+    line-height: 61px;
+    color: #00094A;
+    margin-bottom: 30px;
+}
+.news__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news__item {
+    width: 360px;
+    height: 370px;
+    
+}
+.news__item ~ .news__item {
+    margin-left: 100px;
+}
+.news-item__image {
+
+}
+.news-item__content {
+    padding-top: 25px;
+    padding-right: 30px;
+}
+.item-content__text {
+    font-size: 12px;
+    line-height: 15px;
+    color: #00094A;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+.item-content__text::before {
+    display: inline-block;
+    content: url('../../image/calendar.png');
+    position: relative;
+    margin-right: 5px;
+    margin-top: 0;
+}
+.item-content__lead {
+    font-size: 16px;
+    line-height: 24px;
+    color: #00094A;
+    margin-bottom: 25px;
+}
+.item-content__link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #06A39C;
+
+}
+.item-content__link::after {
+    content: url('../../image/Arrow-right.png');
+    position: relative;
+    margin-left: 5px;
+}
+.item-content__link:hover {
+    opacity: 0.7;
+}

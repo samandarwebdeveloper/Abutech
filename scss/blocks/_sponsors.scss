@@ -1,0 +1,78 @@
+// =========sponsors=====================
+.sponsors {
+
+}
+.sponsors__wrapper {
+    padding: 100px 0;
+}
+.sponsors__text {
+    font-size: 24px;
+    line-height: 29px;
+    color: #00094A;
+}
+.sponsors__lead {
+    font-size: 50px;
+    line-height: 61px;
+    color: #00094A;
+
+}
+.sponsors__title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #00094A;
+    opacity: 0.8;
+    width: 522px;
+    margin-bottom: 70px;
+}
+.sponsors__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+.sponsors__item {
+    width: 298px;
+    height: 123px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ECECEC;
+}
+.sponsors-item__img {
+    display: block;
+}
+.sponsors__skroll {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+    cursor: pointer;
+}
+
+.sponsors__link {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 186px;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #00094A;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+.sponsors__link:hover {
+    border-color: #00094A;
+    background-color: #fff;
+    color: #00094A;
+}

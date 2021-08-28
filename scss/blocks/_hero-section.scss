@@ -1,0 +1,50 @@
+// =======HERO SECTION================
+.site-main {
+
+}
+.hero-section {
+    padding-top: 80px;
+}
+.hero-wrapper {
+    background: linear-gradient(57.22deg, #00094A 0.56%, rgba(0, 9, 74, 0) 46.43%), url('../../image/hero-img.png');
+    background-repeat: no-repeat;
+    padding: 195px 0 54px 60px;
+    
+
+}
+.hero-lead {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+}
+.hero-text {
+    width: 493px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+.hero-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #00094A;
+    border-radius: 3px;
+    padding: 14px 69px 14px 15px;
+    transition: all 0.2s;
+}
+.hero-link:hover {
+    opacity: 0.7;
+}
+.hero-link__img {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 10px;
+}

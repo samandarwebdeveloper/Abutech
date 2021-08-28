@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/abutech-logo.jpg" type="image/x-icon">
+    <title>Abutech</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="site-logo__link" href="abutech.html">
+                    <img class="site-logo__image" src="./image/logo.png" alt="site logo">
+                    <nav class="site-navigation">
+                        <a class="header-tel__link" href="tel:+998 90 123 45 67">+998 90 123 45 67</a>|
+                        <select id="lang">
+                            <option value="eng">ENG</option>
+                            <option value="rus" selected>RU</option>
+                            <option value="uzb">UZ</option>
+                        </select>
+                        <a class="header__link-btn" href="#">оставить заявку</a>
+                        
+                    </nav>
+                    <button class="ham">
+                        <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+                        <span class="menuIcon material-icons">
+                          menu
+                        </span>
+                        <span class="xIcon material-icons">
+                          close
+                        </span>
+                      </button>
+                      <div class="menu">
+                        <a href="abutech.html"><img class="menu-logo" src="./image/logo.png" alt="logo"></a>
+                        <ul class="menu-link">
+                            <li>ENG</li>
+                            <li>RU</li>
+                            <li>UZ</li>
+                        </ul>
+                          <ul class="menulist">
+                            
+                            <li><a class="menuLink" href="#">Главная</a></li>
+                            <li><a class="menuLink" href="#">О нас</a></li>
+                            <li><a class="menuLink" href="#">Сервисы</a></li>
+                            <li><a class="menuLink" href="#">Ресурсы</a></li>
+                            <li><a class="menuLink" href="#">Проекты</a></li>
+                            <li><a class="menuLink" href="#">Контакты</a></li>
+                          </ul>
+                          <a class="header-menu__link-btn" href="#">оставить заявку</a>
+                          <div class="menu-footer">
+                              <ul class="menu-list">
+                                  <li class="menu-list-item">
+                                      <p class="menu-item-text">Номер телефона</p>
+                                      <a class="menu-tel" href="tel:+994 94 944 94 84 ">+994 94 944 94 84 </a>
+                                  </li>
+                                  <li class="smsite-items">
+                                      <p>Мы в соц.сетях</p>
+                                      <ul class="menu-smsite">
+                                        <li class="menu-sites__item"><a class="menu__smsites-link" href="#">Facebook</a></li>
+                                        <li class="menu-sites__item"><a class="menu__smsites-link" href="#">Instagram</a></li>
+                                        <li class="menu-sites__item"><a class="menu__smsites-link" href="#">Telegram</a></li>
+                                        <li class="menu-sites__item"><a class="menu__smsites-link" href="#">Behance</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                      </div>
+                      </div>
+                      <script>
+                          var menu = document.querySelector(".menu")
+                            var ham = document.querySelector(".ham")
+                            var xIcon = document.querySelector(".xIcon")
+                            var menuIcon = document.querySelector(".menuIcon")
+
+                            ham.addEventListener("click", toggleMenu)
+
+                            function toggleMenu() {
+                            if (menu.classList.contains("showMenu")) {
+                                menu.classList.remove("showMenu");
+                                xIcon.style.display = "none";
+                                menuIcon.style.display = "block";
+                            } else {
+                                menu.classList.add("showMenu");
+                                xIcon.style.display = "block";
+                                menuIcon.style.display = "none";
+                            }
+                            }
+
+                            var menuLinks = document.querySelectorAll(".menuLink")
+
+                            menuLinks.forEach(
+                            function (menuLink) {
+                                menuLink.addEventListener("click", toggleMenu)
+                            }
+                            )
+                      </script>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="site-main">
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <h1 class="hero-lead">izlamasdan topamiz :)</h1>
+                    <p class="hero-text">Abutech has been eligible to provide the best of services to our clients across the world remaining to our.</p>
+                    <a class="hero-link" href="https://www.youtube.com/channel/UC830hxO04F_uxueEEk3_0zA/featured">Смотреть видео<svg class="hero-link__img" width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="35.5" cy="35.5" r="13.5" fill="white"/>
+                        <circle cx="35.5" cy="35.5" r="24.25" stroke="white" stroke-width="0.5"/>
+                        <circle opacity="0.5" cx="35.5" cy="35.5" r="35.4" stroke="white" stroke-width="0.2"/>
+                        <path d="M41 35.7631L32.75 40.5263V31L41 35.7631Z" fill="#00094A"/>
+                        <animateTransform attributeName="transform"
+                        type="scale"
+                        from="1 1"
+                        to="2 2"
+                        begin="0s"
+                        dur="1s"
+                        repeatCount="indefinite"/>
+                        </svg>
+                        </a>
+                </div>
+            </div>
+    </section> 
+    <section class="our-results">
+        <div class="container">
+            <div class="our-results__wrapper">
+                <ul class="our-results__list">
+                    <li class="our-results__item">
+                        <h2 class="our-results-item__lead">67+</h2>
+                        <p class="our-results-item__text">выполненных
+                            проектов</p>
+                    </li>
+                    <li class="our-results__item">
+                        <h2 class="our-results-item__lead">40+</h2>
+                        <p class="our-results-item__text">человек в команде</p>
+                    </li>
+                    <li class="our-results__item">
+                        <h2 class="our-results-item__lead">230+</h2>
+                        <p class="our-results-item__text">бизнесов продвинули</p>
+                    </li>
+                    <li class="our-results__item">
+                        <h2 class="our-results-item__lead">4+</h2>
+                        <p class="our-results-item__text">лет опыта на рынке</p>
+                    </li>
+                    <li class="our-results__item">
+                        <h2 class="our-results-item__lead">147k</h2>
+                        <p class="our-results-item__text">просмотров на Behance</p>
+                    </li>
+                    <li class="our-results__item">
+                        <h2 class="our-results-item__lead">12</h2>
+                        <p class="our-results-item__text">выигранных
+                            футбольных кубков</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> 
+    <section class="service">
+        <div class="container">
+            <div class="service__wrapper">
+                <p class="service__text">ЧТО МЫ</p>
+                <h2 class="service__lead">ПРЕДЛАГАЕМ</h2>
+                <ul class="service__list">
+                    <li class="service__item">
+                        <img class="service-item__img" src="./image/program.png" alt="program">
+                        <h3 class="service-item__lead">Программные обеспечеия</h3>
+                        <p class="service-item__text">В них входять веб-сайты, админ панели, телеграм-боты, системные решение и много другие</p>
+                    </li>
+                    <li class="service__item">
+                        <img class="service-item__img" src="./image/ux-ui.png" alt="ux ui design">
+                        <h3 class="service-item__lead">UX & UI дизайн</h3>
+                        <p class="service-item__text">Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Donec elementum tellus.</p>
+                    </li>
+                    <li class="service__item">
+                        <img class="service-item__img" src="./image/smm.png" alt="smm"><img class="smm-center" src="./image/smm-center.png" alt="smm">
+                        <h3 class="service-item__lead">SMM и маркетинг</h3>
+                        <p class="service-item__text">Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Donec elementum tellus.</p>
+                    </li>
+                    <li class="service__item">
+                        <img class="service-item__img" src="./image/brending.png" alt="brending">
+                        <h3 class="service-item__lead">Брендинг</h3>
+                        <p class="service-item__text">Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Donec elementum tellus.</p>
+                    </li>
+                    <li class="service__item">
+                        <img class="service-item__img" src="./image/graphic.png" alt="graphic gesign"><img class="graphic-center" src="./image/graphic-center.png" alt="graphic-center">
+                        <h3 class="service-item__lead">Продакшн и продвижение</h3>
+                        <p class="service-item__text">Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Donec elementum tellus.</p>
+                    </li>
+                    <li class="service__item">
+                        <img class="service-item__img" src="./image/gesign.png" alt="design">
+                        <h3 class="service-item__lead">Дизайн сервисы</h3>
+                        <p class="service-item__text">Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Donec elementum tellus.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> 
+    <section class="help-results">
+        <div class="container">
+            <div class="help-results__wrapper">
+                <div class="help-results__content">
+                    <div class="help-results__title">
+                        <p class="help-results__text">НЕ ЗНАЕТЕ</p>
+                        <h2 class="help-results__title-lead">КАКАЯ <span>УСЛУГА</span> ПОДОЙДЕТ ИМЕННО ВАМ?</h2>
+                        <p class="help-results__title-text">Оставьте заяавку - наши менеджеры разберут вашу текущую ситуацию и помогут подобрать услугу для масштабирования бизнеса</p>
+                    </div>
+                    <a class="help-results__link" href="#">узнать больше</a>
+                </div>
+                <ul class="results-list">
+                    <li class="results-item">
+                        <a class="results-link" href="#">
+                            All
+                        </a>
+                    </li>
+                    <li class="results-item">
+                        <a class="results-link results-item--active" href="#">
+                            Development
+                        </a>
+                    </li>
+                    <li class="results-item">
+                        <a class="results-link" href="#">
+                            Design
+                        </a>
+                    </li>
+                    <li class="results-item">
+                        <a class="results-link" href="#">
+                            Production
+                        </a>
+                    </li>
+                    <li class="results-item">
+                        <a class="results-link" href="#">
+                            Marketing
+                        </a>
+                    </li>
+                </ul>
+                <ul class="maket-list">
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket1.png" alt="bizning ishlar">              
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket2.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket3.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket4.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket5.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket6.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket7.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient--long">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket8.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket9.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket10.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket11.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket12.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket13.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                    <li class="maket-item">
+                        <a href="#">
+                            <img class="maket-item__img" src="./image/maket14.png" alt="bizning ishlar">
+                        </a>
+                        <div class="item-gradient--long">
+                            <p class="item-text">Кухонная мойка «Формула комфорта»</p>
+                        </div> 
+                    </li>
+                </ul>
+                <div class="maket-links">
+                    <a class="more" href="#"><img src="./image/more.png" alt="plus"></a>
+                    <a class="maket-link" href="#">все работы</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="group">
+        <div class="container">
+            <div class="group__wrapper">
+                <p class="group__title">НАША</p>
+                <h2 class="group__lead">КОМАНДА</h2>
+                <p class="group__text">Pet owners, Film geeks, Sports Junkies? It’s obvious, the team work is splendid, for they are all either beer nuts or caffeine addicts.</p>
+                <div class="Smm-manager">
+                    <img src="./image/smm-manager.png" alt="smms">
+                    <div class="group-gradiend">
+                        <h4>Sinfdoshim Maftun</h4>
+                        <p>Smm manager</p>
+                    </div>
+                </div>
+                <div class="Bekarchi">
+                    <img src="./image/bekarchi.png" alt="bekarchi">
+                    <div class="group-gradiend">
+                        <h4>Sanjar taksi</h4>
+                        <p>Bekarchi</p>
+                    </div>
+                </div>
+                <div class="Project-manager">
+                    <img src="./image/project-manager.png" alt="project">
+                    <div class="group-gradiend--project">
+                        <h4>Oyposhsha Qo‘ziyeva</h4>
+                        <p>Project manager</p>
+                    </div>
+                </div>
+                <div class="art-direktor">
+                    <img src="./image/art-designer.png" alt="art-designer">
+                    <div class="group-gradiend">
+                        <h4>Shovkat aka</h4>
+                        <p>art direktor</p>
+                    </div>
+                </div>
+                <div class="veb-dizayner">
+                    <img src="./image/veb-dizayner.png" alt="veb veb-dizayner">
+                    <div class="group-gradiend">
+                        <h4>Rustam jiyan</h4>
+                        <p>veb dizayner</p>
+                    </div>
+                </div>
+                <div class="veb-dizayner2">
+                    <img src="./image/veb-dizayner2.png" alt="veb-dizayner2">
+                    <div class="group-gradiend--veb2">
+                        <h4>Alisher qo’shni</h4>
+                        <p>veb dizayner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="technology">
+        <div class="container">
+            <div class="technology__wrapper">
+                <p class="technology__text">ЗНАЕТЕ ЛИ ВЫ</p>
+                <h2 class="technology__lead">ЧТО МЫ ИСПОЛЬЗУЕМ ЭТИ?</h2>
+                <ul class="technology__list">
+                    <li class="technology__item">
+                        <a class="technology__link" href="#">
+                            Backend
+                        </a>
+                    </li>
+                    <li class="technology__item">
+                        <a class="technology__link technology__link--active" href="#">
+                            Frontend
+                        </a>
+                    </li>
+                    <li class="technology__item">
+                        <a class="technology__link" href="#">
+                            Mobile
+                        </a>
+                    </li>
+                    <li class="technology__item">
+                        <a class="technology__link" href="#">
+                            Database
+                        </a>
+                    </li>
+                    <li class="technology__item">
+                        <a class="technology__link" href="#">
+                            Dizayn
+                        </a>
+                    </li>
+                    <li class="technology__item">
+                        <a class="technology__link" href="#">
+                            Продакшн
+                        </a>
+                    </li>
+                </ul>
+                
+                <ul class="technologys__list">
+                    <li class="technologys__item">
+                        <img class="technologys-item__img" src="./image/react.png" alt="react">
+                        <p class="technologys-item__text">React</p>
+                    </li>
+                    <li class="technologys__item">
+                        <img class="technologys-item__img" src="./image/git.png" alt="git">
+                        <p class="technologys-item__text">Git</p>
+                    </li>
+                    <li class="technologys__item">
+                        <img class="technologys-item__img" src="./image/sass.png" alt="sass">
+                        <p class="technologys-item__text">Sass</p>
+                    </li>
+                    <li class="technologys__item">
+                        <img class="technologys-item__img" src="./image/nodejs.png" alt="nodejs">
+                        <p class="technologys-item__text">NodeJS</p>
+                    </li>
+                    <li class="technologys__item">
+                        <img class="technologys-item__img" src="./image/typescript.png" alt="typescript">
+                        <p class="technologys-item__text">TypeScript</p>
+                    </li>
+                    <li class="technologys__item">
+                        <img class="technologys-item__img" src="./image/vuejs.png" alt="vuejs">
+                        <p class="technologys-item__text">VueJS</p>
+                    </li>
+                    <li class="technologys__item">
+                        <img class="technologys-item__img" src="./image/angular.png" alt="angular">
+                        <p class="technologys-item__text">Angular</p>
+                    </li>
+                    <li class="technologys__item">
+                        <img class="technologys-item__img" src="./image/postman.png" alt="postman">
+                        <p class="technologys-item__text">Postman</p>
+                    </li>
+                    <li class="technologys__item">
+                        <img class="technologys-item__img" src="./image/gulp.png" alt="gulp">
+                        <p class="technologys-item__text">Gulp</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="news__wrapper">
+                <p class="news__text">ЧТО</p>
+                <h2 class="news__lead">НОВОГО</h2>
+                <ul class="news__list">
+                    <li class="news__item">
+                        <img class="news-item__image" src="./image/news-item1.png" alt="news">
+                        <div class="news-item__content">
+                            <p class="item-content__text">February 28, 2021</p>
+                            <h4 class="item-content__lead">5 Ways Technology Has Improved Business Today</h4>
+                            <a class="item-content__link" href="#">Read more</a>
+                        </div>
+                    </li>
+                    <li class="news__item">
+                        <img class="news-item__image" src="./image/news-item2.png" alt="news">
+                        <div class="news-item__content">
+                            <p class="item-content__text">February 28, 2021</p>
+                            <h4 class="item-content__lead">The affect of the Covid-19 to businesses that are offline</h4>
+                            <a class="item-content__link" href="#">Read more</a>
+                        </div>
+                    </li>
+                    <li class="news__item">
+                        <img class="news-item__image" src="./image/news-item3.png" alt="news">
+                        <div class="news-item__content">
+                            <p class="item-content__text">February 28, 2021</p>
+                            <h4 class="item-content__lead">How to get ready for the first job interview</h4>
+                            <a class="item-content__link" href="#">Read more</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> 
+    <section class="sponsors">
+        <div class="container">
+            <div class="sponsors__wrapper">
+                <p class="sponsors__text">МЫ</p>
+                <h2 class="sponsors__lead">БЛАГОДАРНЫ ИМ</h2>
+                <p class="sponsors__title">Наша миссия - распространять образование, которое можно получить где угодно и к которому можно получить доступ где угодно.</p>
+                <ul class="sponsors__list">
+                    <li class="sponsors__item">
+                        <img class="sponsors-item__img" src="./image/najot-talim.png" alt="najot-talim">
+                    </li>
+                    <li class="sponsors__item">
+                        <img class="sponsors-item__img" src="./image/microsoft.png" alt="microsoft">
+                    </li>
+                    <li class="sponsors__item">
+                        <img class="sponsors-item__img" src="./image/spacex.png" alt="spacex">
+                    </li>
+                    <li class="sponsors__item">
+                        <img class="sponsors-item__img" src="./image/openai.png" alt="openai">
+                    </li>
+                    <li class="sponsors__item">
+                        <img class="sponsors-item__img" src="./image/udemy.png" alt="udemy">
+                    </li>
+                    <li class="sponsors__item">
+                        <img class="sponsors-item__img" src="./image/udacity.png" alt="udacity">
+                    </li>
+                    <li class="sponsors__item">
+                        <img class="sponsors-item__img" src="./image/osmondagi-bolalar.png" alt="osmondagi-bolalar">
+                    </li>
+                    <li class="sponsors__item">
+                        <img class="sponsors-item__img" src="./image/najot-talim.png" alt="najot-talim">
+                    </li>
+                </ul>
+                <img class="sponsors__skroll" src="./image/button.png" alt="btn">
+                <a class="sponsors__link" href="#">стать партнёром</a>
+            </div>
+        </div>
+    </section>
+    <section class="order">
+        <div class="container">
+            <div class="order__wrapper">
+                <div class="order__tel-content">
+                    <h3 class="tel-content__lead">Хотите заказать услуги?</h3>
+                    <p class="tel-content__text">Reference site about, giving information on its origins, as well as a random Lipsum generator.</p>
+                    <form action="https://echo.htmlacademy.ru">
+                        <input class="tel-content__input" type="tel" name="tel" id="tel" placeholder="+998 |">
+                        <button class="tel-content__btn" type="submit">отправить</button>
+                    </form>
+                </div>
+                <div class="order__download-content">
+                    <h3 class="download-content__lead">Ознакомтесь с начальными
+                        инструкциями</h3>
+                    <p class="download-content__text">Reference site about, giving information on its origins</p>
+                    <button class="download-content__btn"><img src="./image/Downlaod.png" alt="Downlaod"> Скачать бриф</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <h2 class="footer__lead">Хотите сделать что-то великое? Позвольте вам помочь.</h2>
+                <p class="footer__text">Готовы? Свяжитесь сегодня.</p>
+                <div class="footer__big-box">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <p class="footer-item__text">E-mail</p>
+                            <a class="footer-item__link" href="mailto:info@abutech.com">info@abutech.com</a>
+                        </li>
+                        <li class="footer__item">
+                            <p class="footer-item__text">Номер телефона</p>
+                            <a class="footer-item__link" href="tel:+994 94 944 94 84 ">+994 94 944 94 84 </a>
+                        </li>
+                        <li class="footer__item">
+                            <p class="footer-item__text">Наш офис</p>
+                            <p class="footer-item__address">Sebzor street, Xadra square, Tashkent, Uzbekistan</p>
+                        </li>
+                        <li class="footer__item hidden">
+                            <p class="footer-item__text">Мы в соц.сетях</p>
+                            <ul class="smdites__list">
+                                <li class="smsites__item"><a class="footer__smsites-link" href="#">Facebook</a></li>
+                                <li class="smsites__item"><a class="footer__smsites-link" href="#">Instagram</a></li>
+                                <li class="smsites__item"><a class="footer__smsites-link" href="#">Telegram</a></li>
+                                <li class="smsites__item"><a class="footer__smsites-link" href="#">Behance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="footer__link-btn">
+                        <a class="footer__btn" href="#">Ознакомиться с услугами <img src="./image/footer-white-vector.png" alt="footer-white-vector"></a>
+                        <a class="footer__btn white" href="#">Посмотреть работы <img src="./image/footer-black-vector.png" alt="footer-black-vector"></a>
+                    </div>
+                    <div class="footer__item sm-hidden">
+                        <p class="footer-item__text">Мы в соц.сетях</p>
+                        <ul class="smdites__list">
+                            <li class="smsites__item"><a class="footer__smsites-link" href="#">Facebook</a></li>
+                            <li class="smsites__item"><a class="footer__smsites-link" href="#">Instagram</a></li>
+                            <li class="smsites__item"><a class="footer__smsites-link" href="#">Telegram</a></li>
+                            <li class="smsites__item"><a class="footer__smsites-link" href="#">Behance</a></li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

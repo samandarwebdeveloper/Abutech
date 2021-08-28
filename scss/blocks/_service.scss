@@ -1,0 +1,66 @@
+// ============SERVICE=============
+.service {
+
+}
+.service__wrapper {
+
+}
+.service__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #00094A;
+}
+.service__lead {
+    font-size: 50px;
+    line-height: 61px;
+    color: #00094A;
+}
+.service__list {
+    width: 100%;
+    @include list-unstyled;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service__item {
+    width: 298px;
+    height: 373px;
+    text-align: center;
+    margin: 30px;
+    padding: 60px 23px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+.service-item__img {
+    margin-bottom: 24px;
+}
+.service-item__lead {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #00094A;
+    margin-bottom: 12px;
+}
+.service-item__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #00094A;
+    opacity: 0.6;
+}
+.smm-center {
+    position: absolute;
+    margin-left: -70px;
+    margin-top: 30px;
+}
+.graphic-center {
+    position: absolute;
+    margin-left: -74px;
+    margin-top: 32px;
+}
